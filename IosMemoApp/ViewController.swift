@@ -29,6 +29,15 @@ class ViewController: UIViewController {
     
     @IBAction func saveBtn(_ sender: UIButton) {
         
+        // memoモデルinit
+        let memo = Memo()
+        
+        // memoインスタンスにテキストを入れる
+        memo.text = textField.text
+        
+        // APIを叩いてDBに保存
+        StockMemos.postMemo(memo: memo)
+        
         
         
         
