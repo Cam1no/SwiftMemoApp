@@ -12,9 +12,12 @@
 		5B020EEE1EF55DDC00F40699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EEC1EF55DDC00F40699 /* Main.storyboard */; };
 		5B020EF01EF55DDC00F40699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EEF1EF55DDC00F40699 /* Assets.xcassets */; };
 		5B020EF31EF55DDC00F40699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EF11EF55DDC00F40699 /* LaunchScreen.storyboard */; };
+		82CD9631B3FA1BBAB4245DDD /* Pods_IosMemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C773E4ACB91B32D04E773 /* Pods_IosMemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D3E8288828793CE7CEF0F2 /* Pods-IosMemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosMemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosMemoApp/Pods-IosMemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6D926BD8CE8A4CECDF101C /* Pods-IosMemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosMemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IosMemoApp/Pods-IosMemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B020EE51EF55DDC00F40699 /* IosMemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosMemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B020EE81EF55DDC00F40699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B020EEA1EF55DDC00F40699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		5B020EEF1EF55DDC00F40699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B020EF21EF55DDC00F40699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B020EF41EF55DDC00F40699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1C773E4ACB91B32D04E773 /* Pods_IosMemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosMemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CD9631B3FA1BBAB4245DDD /* Pods_IosMemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062DF72E154998AFD5ABE6D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC1C773E4ACB91B32D04E773 /* Pods_IosMemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B020EDC1EF55DDC00F40699 = {
 			isa = PBXGroup;
 			children = (
 				5B020EE71EF55DDC00F40699 /* IosMemoApp */,
 				5B020EE61EF55DDC00F40699 /* Products */,
+				D9140E2F3A1AAD4A636A3E7C /* Pods */,
+				062DF72E154998AFD5ABE6D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = IosMemoApp;
 			sourceTree = "<group>";
 		};
+		D9140E2F3A1AAD4A636A3E7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02D3E8288828793CE7CEF0F2 /* Pods-IosMemoApp.debug.xcconfig */,
+				3B6D926BD8CE8A4CECDF101C /* Pods-IosMemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B020EF71EF55DDC00F40699 /* Build configuration list for PBXNativeTarget "IosMemoApp" */;
 			buildPhases = (
+				582C0C7211A0CAA28A07250F /* [CP] Check Pods Manifest.lock */,
 				5B020EE11EF55DDC00F40699 /* Sources */,
 				5B020EE21EF55DDC00F40699 /* Frameworks */,
 				5B020EE31EF55DDC00F40699 /* Resources */,
+				6F135A758702B8C26EF6C82C /* [CP] Embed Pods Frameworks */,
+				B73F962F780456E73BC1CC40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		582C0C7211A0CAA28A07250F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F135A758702B8C26EF6C82C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosMemoApp/Pods-IosMemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B73F962F780456E73BC1CC40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosMemoApp/Pods-IosMemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B020EE11EF55DDC00F40699 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		5B020EF81EF55DDC00F40699 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D3E8288828793CE7CEF0F2 /* Pods-IosMemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MGHH4PP8LQ;
@@ -272,6 +348,7 @@
 		};
 		5B020EF91EF55DDC00F40699 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6D926BD8CE8A4CECDF101C /* Pods-IosMemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MGHH4PP8LQ;
