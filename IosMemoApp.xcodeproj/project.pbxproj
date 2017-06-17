@@ -12,6 +12,8 @@
 		5B020EEE1EF55DDC00F40699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EEC1EF55DDC00F40699 /* Main.storyboard */; };
 		5B020EF01EF55DDC00F40699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EEF1EF55DDC00F40699 /* Assets.xcassets */; };
 		5B020EF31EF55DDC00F40699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B020EF11EF55DDC00F40699 /* LaunchScreen.storyboard */; };
+		5B020EFF1EF561AE00F40699 /* StockMemos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B020EFE1EF561AE00F40699 /* StockMemos.swift */; };
+		5B020F011EF561C000F40699 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B020F001EF561C000F40699 /* Memo.swift */; };
 		82CD9631B3FA1BBAB4245DDD /* Pods_IosMemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C773E4ACB91B32D04E773 /* Pods_IosMemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		5B020EEF1EF55DDC00F40699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B020EF21EF55DDC00F40699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B020EF41EF55DDC00F40699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B020EFE1EF561AE00F40699 /* StockMemos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockMemos.swift; sourceTree = "<group>"; };
+		5B020F001EF561C000F40699 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		EC1C773E4ACB91B32D04E773 /* Pods_IosMemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosMemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,48 @@
 		5B020EE71EF55DDC00F40699 /* IosMemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B020EFB1EF5615800F40699 /* Models */,
+				5B020EFA1EF5614900F40699 /* Controllers */,
 				5B020EE81EF55DDC00F40699 /* AppDelegate.swift */,
-				5B020EEA1EF55DDC00F40699 /* ViewController.swift */,
 				5B020EEC1EF55DDC00F40699 /* Main.storyboard */,
 				5B020EEF1EF55DDC00F40699 /* Assets.xcassets */,
 				5B020EF11EF55DDC00F40699 /* LaunchScreen.storyboard */,
 				5B020EF41EF55DDC00F40699 /* Info.plist */,
 			);
 			path = IosMemoApp;
+			sourceTree = "<group>";
+		};
+		5B020EFA1EF5614900F40699 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B020EEA1EF55DDC00F40699 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5B020EFB1EF5615800F40699 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B020EFD1EF5616E00F40699 /* Model Object */,
+				5B020EFC1EF5616000F40699 /* Model Manager */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5B020EFC1EF5616000F40699 /* Model Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5B020EFE1EF561AE00F40699 /* StockMemos.swift */,
+			);
+			name = "Model Manager";
+			sourceTree = "<group>";
+		};
+		5B020EFD1EF5616E00F40699 /* Model Object */ = {
+			isa = PBXGroup;
+			children = (
+				5B020F001EF561C000F40699 /* Memo.swift */,
+			);
+			name = "Model Object";
 			sourceTree = "<group>";
 		};
 		D9140E2F3A1AAD4A636A3E7C /* Pods */ = {
@@ -214,6 +252,8 @@
 			files = (
 				5B020EEB1EF55DDC00F40699 /* ViewController.swift in Sources */,
 				5B020EE91EF55DDC00F40699 /* AppDelegate.swift in Sources */,
+				5B020EFF1EF561AE00F40699 /* StockMemos.swift in Sources */,
+				5B020F011EF561C000F40699 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +419,7 @@
 				5B020EF91EF55DDC00F40699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
