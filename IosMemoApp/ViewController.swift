@@ -38,9 +38,6 @@ class ViewController: UIViewController {
         // APIを叩いてDBに保存
         StockMemos.postMemo(memo: memo)
         
-        
-        
-        
     }
     
 
