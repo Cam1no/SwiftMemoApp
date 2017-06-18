@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         // APIを叩いてDBに保存
         StockMemos.postMemo(memo: memo)
         
+        // textfieldから削除
+        textField.text = ""
+        
     }
     
 
