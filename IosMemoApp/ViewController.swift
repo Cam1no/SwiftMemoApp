@@ -41,6 +41,8 @@ class ViewController: UIViewController, UITableViewDelegate {
         // textfieldから削除
         textField.text = ""
         
+        
+        // 画面もどる
         self.navigationController?.popViewController(animated: true)
          
     }
