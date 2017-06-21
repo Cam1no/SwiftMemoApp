@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var textField: UITextView!
     
@@ -25,9 +25,8 @@ class ViewController: UIViewController {
     }
 
     
-    
-    
-    @IBAction func saveBtn(_ sender: UIButton) {
+    @IBAction func saveBtn(_ sender: UIBarButtonItem) {
+        
         
         // memoモデルinit
         let memo = Memo()
@@ -38,11 +37,13 @@ class ViewController: UIViewController {
         // APIを叩いてDBに保存
         StockMemos.postMemo(memo: memo)
         
+        
         // textfieldから削除
         textField.text = ""
         
+        self.navigationController?.popViewController(animated: true)
+         
     }
     
-
 }
 
